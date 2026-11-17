@@ -5,15 +5,15 @@ import { useEffect, useId, useState } from "react";
 
 const tabNames = ["Photography", "Movies & TV", "Music", "Games"] as const;
 const photography = [
-  { src: "/interests/japan-01.png", width: 1832, height: 3264, alt: "Japanese castle roof detail" },
-  { src: "/interests/japan-02.png", width: 3264, height: 1832, alt: "Red bridge and trees near a Japanese castle" },
-  { src: "/interests/japan-03.png", width: 2160, height: 2880, alt: "Illuminated temple roof at night" },
-  { src: "/interests/japan-04.png", width: 1832, height: 3264, alt: "Japanese castle against a bright sky" },
-  { src: "/interests/japan-05.png", width: 3264, height: 1832, alt: "Japanese castle against a cloudy sky" },
-  { src: "/interests/japan-06.png", width: 1200, height: 1600, alt: "Night street scene with Japanese signs" },
-  { src: "/interests/sf-01.png", width: 1357, height: 760, alt: "Street musicians performing in San Francisco" },
-  { src: "/interests/sf-02.png", width: 1337, height: 756, alt: "Downtown San Francisco street scene" },
-  { src: "/interests/sf-03.png", width: 1200, height: 1600, alt: "Snowfall around a fountain" },
+  { src: "/interests/japan-01.webp", width: 1832, height: 3264, alt: "Japanese castle roof detail" },
+  { src: "/interests/japan-02.webp", width: 3264, height: 1832, alt: "Red bridge and trees near a Japanese castle" },
+  { src: "/interests/japan-03.webp", width: 2160, height: 2880, alt: "Illuminated temple roof at night" },
+  { src: "/interests/japan-04.webp", width: 1832, height: 3264, alt: "Japanese castle against a bright sky" },
+  { src: "/interests/japan-05.webp", width: 3264, height: 1832, alt: "Japanese castle against a cloudy sky" },
+  { src: "/interests/japan-06.webp", width: 1200, height: 1600, alt: "Night street scene with Japanese signs" },
+  { src: "/interests/sf-01.webp", width: 1357, height: 760, alt: "Street musicians performing in San Francisco" },
+  { src: "/interests/sf-02.webp", width: 1337, height: 756, alt: "Downtown San Francisco street scene" },
+  { src: "/interests/sf-03.webp", width: 1200, height: 1600, alt: "Snowfall around a fountain" },
 ];
 const albums = [
   { title: "Brand New Eyes", artist: "Paramore", src: "/music/paramore.jpg", href: "https://open.spotify.com/album/5BljC4IBPCs21w6mdtoMQh" },
@@ -37,10 +37,10 @@ const screenFavorites = [
   { title: "Chungking Express", src: "/movies/chungking-express.png", href: "https://www.imdb.com/title/tt0109424/" },
 ];
 const games = [
-  { title: "Wingspan", src: "/games/wingspan.png" },
+  { title: "Wingspan", src: "/games/wingspan.webp" },
   { title: "Valorant", src: "/games/valorant.png" },
   { title: "Super Mario Galaxy 2", src: "/games/super-mario-galaxy-2.png" },
-  { title: "The Legend of Zelda: Breath of the Wild", src: "/games/breath-of-the-wild.png" },
+  { title: "The Legend of Zelda: Breath of the Wild", src: "/games/breath-of-the-wild.webp" },
   { title: "The Last of Us Part II", src: "/games/last-of-us-2.png" },
   { title: "Kirby's Epic Yarn", src: "/games/kirbys-epic-yarn.png" },
   { title: "Mario Kart: Double Dash!!", src: "/games/mario-kart-double-dash.png" },
