@@ -1,0 +1,9 @@
+.status-dot.active { background: #75caa6; box-shadow: 0 0 0 3px rgba(117, 202, 166, .12); }
+.repo-name { margin: 3.4rem 0 .65rem !important; color: var(--accent) !important; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; }
+.github-preview .repo-name + h3 { margin-top: 0; }
+.github-preview h3 a { border-bottom: 1px solid transparent; }
+.github-preview h3 a:hover { border-color: currentColor; }
+.commit-meta { margin-top: 1.5rem !important; color: var(--muted) !important; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; }
+.commit-meta span { padding: 0 .35rem; }
+.github-chart-image { display: block; width: 100%; min-height: 110px; margin-top: 2rem; object-fit: contain; object-position: left center; mix-blend-mode: screen; }
+.chart-panel-top a { color: var(--accent); text-transform: none; }

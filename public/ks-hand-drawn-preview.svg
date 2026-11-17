@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 130" role="img" aria-label="Early hand-drawn KS logo concept">
+  <rect width="260" height="130" fill="#0b0c0e"/>
+  <g fill="none" stroke="#f2f2ed" stroke-linecap="round" stroke-linejoin="round" stroke-width="11">
+    <path d="M48 24 40 103M43 62 100 24M47 61 105 105"/>
+    <path d="M207 30c-17-13-51-12-61 4-11 22 25 25 44 33 24 10 12 33-10 39-20 5-47-2-60-15"/>
+  </g>
+  <path d="M29 111c62 7 137 7 211-3" fill="none" stroke="#3d8fc7" stroke-linecap="round" stroke-width="5"/>
+</svg>

@@ -1,0 +1,2 @@
+body, button, input, textarea { font-family: var(--font-bodoni-moda), Georgia, "Times New Roman", serif; }
+h1, h2, h3, .hero-bio, .page-intro h1, .entry h2, .project h2, .writing-list strong, .closing h2 { font-family: var(--font-bodoni-moda), Georgia, "Times New Roman", serif !important; font-weight: 400 !important; }

@@ -1,0 +1,19 @@
+:root {
+  --canvas: #0b0c0e;
+  --surface: #16181c;
+  --ink: #f2f2ed;
+  --soft: #c4c4be;
+  --muted: #92918b;
+  --line: #2b2d31;
+  --accent: #3d8fc7;
+}
+
+:root[data-theme="light"] {
+  --canvas: #f7f7f4;
+  --surface: #ffffff;
+  --ink: #17191b;
+  --soft: #474b4e;
+  --muted: #72777b;
+  --line: #d8dbdc;
+  --accent: #1c6597;
+}

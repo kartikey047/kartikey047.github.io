@@ -1,0 +1,28 @@
+.signature {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ink);
+}
+
+.proper-monogram { display: inline-flex; align-items: center; gap: .03rem; font-family: "Trebuchet MS", "Segoe UI", sans-serif; font-size: 2rem; font-weight: 500; letter-spacing: -.1em; line-height: 1; }
+.proper-monogram > span { display: inline-block; }
+.proper-monogram > span:first-child { transform: rotate(-9deg) translateY(-.1em); }
+.proper-monogram > span:last-child { color: var(--soft); transform: rotate(12deg) translateY(.14em); }
+.signature:hover .proper-monogram > span:last-child,
+.signature:focus-visible .proper-monogram > span:last-child { color: inherit; }
+
+.landing-hero.no-photo {
+  display: block;
+  padding-bottom: 7.5rem;
+}
+
+.landing-hero.no-photo .hero-bio {
+  max-width: none;
+  width: 100%;
+  margin: 3rem 0 0;
+}
+
+@media (max-width: 640px) {
+  .landing-hero.no-photo { padding: 5rem 0; }
+  .landing-hero.no-photo .hero-bio { margin-top: 2.2rem; }
+}

@@ -1,0 +1,56 @@
+/* A quiet research-list layout adapted for engineering work. */
+.nav.nav-only { justify-content: space-between; height: 52px; }
+.nav-home { color: var(--soft); font-size: .76rem; }
+.nav-home:hover { color: var(--ink); }
+.nav-actions { display: flex; align-items: center; gap: 1rem; }
+.nav-only .nav-links { gap: 1.15rem; }
+.nav-only .nav-links a { color: var(--muted); font-size: .76rem; }
+.nav-only .nav-links a[aria-current="page"] { color: var(--ink); }
+
+.barron-page { max-width: 920px; }
+.barron-intro { max-width: 760px; padding: clamp(3.6rem, 7vw, 6rem) 0 3.4rem; }
+.barron-intro > p { margin: 0 0 .8rem; color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; }
+.barron-intro h1 { max-width: 680px; margin: 0; color: var(--ink); font-family: var(--font-bodoni-moda), Georgia, serif; font-size: clamp(2.3rem, 5vw, 4.2rem); font-weight: 400; letter-spacing: -.055em; line-height: 1; }
+.barron-intro > div { max-width: 610px; margin-top: 1.6rem; }
+.barron-intro > div p { margin: 0; color: var(--soft); font-size: 1rem; }
+
+.barron-list { display: grid; gap: 2.2rem; padding-bottom: 4.5rem; }
+.barron-entry { display: grid; grid-template-columns: 172px minmax(0, 1fr); align-items: start; gap: 1.8rem; }
+.barron-entry--text-only { grid-template-columns: minmax(0, 1fr); }
+.barron-thumbnail { display: grid; width: 100%; aspect-ratio: 1.35 / 1; place-items: center; overflow: hidden; background: linear-gradient(145deg, #1b1d22, #111216); color: var(--muted); text-decoration: none; }
+.barron-thumbnail span { position: relative; color: var(--soft); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.1rem; letter-spacing: .1em; }
+.barron-thumbnail--experience { background: var(--canvas); }
+.experience-logo { display: block; max-width: 74%; max-height: 62%; object-fit: contain; }
+.experience-logo--illinois { width: 78px; }
+.experience-logo--capital-one { width: 138px; }
+.experience-logo--illinois-surface,
+.experience-logo--capital-one-surface { background: var(--canvas); }
+.barron-thumbnail--project { position: relative; background: linear-gradient(135deg, #1f2934, #111216 68%); }
+.barron-thumbnail--project:hover { background: linear-gradient(135deg, #27394a, #111216 68%); }
+html[data-theme="light"] .barron-thumbnail--project { background: linear-gradient(135deg, #e0e9ef, #f6f7f5 68%); }
+html[data-theme="light"] .barron-thumbnail--project:hover { background: linear-gradient(135deg, #d2e3ee, #f6f7f5 68%); }
+.barron-entry-copy { padding: .05rem 0; }
+.barron-entry h2 { margin: 0; color: var(--ink); font-family: var(--font-bodoni-moda), Georgia, serif; font-size: clamp(1.4rem, 2.7vw, 2rem); font-weight: 400; letter-spacing: -.035em; line-height: 1.08; }
+.barron-entry h2 a { text-decoration: none; }
+.barron-entry h2 a:hover { color: var(--accent); }
+.barron-byline { margin: .45rem 0 .9rem; color: var(--muted); font-size: .9rem; }
+.barron-byline--spaced { display: flex; flex-wrap: wrap; align-items: center; column-gap: .72rem; row-gap: .2rem; }
+.barron-byline--spaced b { color: var(--soft); font-size: .72em; font-weight: 400; }
+.barron-entry-copy > p:not(.barron-byline):not(.barron-links) { max-width: 600px; margin: 0; color: var(--soft); font-size: .97rem; }
+.barron-links { margin: .85rem 0 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; }
+.barron-links a { color: var(--accent); }
+.barron-links a::after { content: " ↗"; }
+.barron-credit { margin-top: .7rem !important; font-size: .72rem !important; color: var(--muted) !important; }
+
+@media (max-width: 640px) {
+  .nav.nav-only { justify-content: space-between; height: 48px; }
+  .nav-actions { gap: .65rem; }
+  .nav-only .nav-links { gap: .65rem; }
+  .nav-only .nav-links a, .nav-home { font-size: .69rem; }
+  .barron-intro { padding: 3.8rem 0 3rem; }
+  .barron-list { gap: 2rem; }
+  .barron-entry { grid-template-columns: 104px minmax(0, 1fr); gap: 1rem; }
+  .barron-entry h2 { font-size: 1.35rem; }
+  .barron-byline { font-size: .82rem; }
+  .barron-entry-copy > p:not(.barron-byline):not(.barron-links) { font-size: .9rem; }
+}
