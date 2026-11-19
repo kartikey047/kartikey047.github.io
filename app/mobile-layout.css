@@ -3,4 +3,8 @@
   .shell {
     width: 100%;
   }
+
+  .barron-entry.barron-entry--text-only {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
