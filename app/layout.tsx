@@ -14,6 +14,7 @@ import "./no-cards.css";
 import "./serif-refinement.css";
 import "./barron-entries.css";
 import "./home-profile.css";
+import "./mobile-layout.css";
 
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
